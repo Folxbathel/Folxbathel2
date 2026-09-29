@@ -4,112 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trade With Folx</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #0d0d0d;
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        .container {
-            text-align: center;
-            max-width: 600px;
-            padding: 20px;
-            background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
-        }
-        h1 {
-            color: #d4af37;
-            font-size: 3rem;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        p {
-            color: #b3b3b3;
-            font-size: 1.1rem;
-            margin-bottom: 30px;
-            line-height: 1.5;
-        }
-        .subscribe-btn {
-            background-color: #d4af37;
-            color: #0d0d0d;
-            padding: 15px 40px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-        }
-        .subscribe-btn:hover {
-            background-color: #fff;
-            box-shadow: 0 0 15px #d4af37;
-            transform: translateY(-2px);
-        }
-        .stats-grid {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 50px;
-            border-top: 1px solid #333;
-            padding-top: 20px;
-        }
-        .stat-item {
-            flex: 1;
-        }
-        .stat-title {
-            color: #b3b3b3;
-            font-size: 0.9rem;
-            margin-bottom: 5px;
-        }
-        .stat-value {
-            color: #ffffff;
-            font-size: 1.3rem;
-            font-weight: bold;
-        }
-        .risk-warning {
-            margin-top: 40px;
-            font-size: 0.8rem;
-            color: #8c8c8c;
-            line-height: 1.4;
-            text-align: left;
-            border-left: 2px solid #d4af37;
-            padding-left: 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons for Threads and X logos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Trade With Folx</h1>
-        <p>Premium trading analysis and insights to guide your market journey.</p>
-        <a href="#" class="subscribe-btn">Subscribe Now →</a>
+
+    <div class="card-container">
         
-        <div class="stats-grid">
-            <div class="stat-item">
-                <div class="stat-title">COMMUNITY</div>
-                <div class="stat-value">11.5K</div>
+        <!-- Header Section -->
+        <header class="card-header">
+            <!-- Top Left: Threads Box -->
+            <a href="#" class="social-box left-box" id="threads-link" target="_blank">
+                <i class="fa-brands fa-threads"></i> Threads
+            </a>
+
+            <!-- Top Right Title & X Box -->
+            <div class="header-right">
+                <h1 class="brand-title">TRADE WITH FOLX</h1>
+                <a href="#" class="social-box right-box" id="x-link" target="_blank">
+                    <i class="fa-brands fa-x-twitter"></i> X (Twitter)
+                </a>
             </div>
-            <div class="stat-item">
-                <div class="stat-title">PLATFORM</div>
-                <div class="stat-value">24/7 Live Analysis</div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="card-body">
+            <p class="description">
+                Premium trading analysis and insights to guide your market journey.
+            </p>
+
+            <!-- Main Subscribe Now Button (Telegram Link) -->
+            <a href="#" class="btn-subscribe" id="telegram-link" target="_blank">
+                Subscribe Now &rarr;
+            </a>
+        </main>
+
+        <!-- Divider Line -->
+        <hr class="divider">
+
+        <!-- Stats Section -->
+        <div class="stats-container">
+            <div class="stat-box">
+                <span class="stat-label">COMMUNITY</span>
+                <span class="stat-value">11.5K</span>
             </div>
-            <div class="stat-item">
-                <div class="stat-title">EXPERTISE</div>
-                <div class="stat-value">Pro Trading</div>
+            <div class="stat-box">
+                <span class="stat-label">PLATFORM</span>
+                <span class="stat-value">24/7 Live Analysis</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">EXPERTISE</span>
+                <span class="stat-value">Pro Trading</span>
             </div>
         </div>
 
-        <div class="risk-warning">
-            <strong>Risk Warning:</strong> Trading involves substantial risk and may not be suitable for every investor. Past performance does not guarantee future results.
-        </div>
+        <!-- Risk Warning Disclaimer -->
+        <footer class="risk-warning">
+            <p><strong>Risk Warning:</strong> Trading involves substantial risk and may not be suitable for every investor. Past performance does not guarantee future results.</p>
+        </footer>
+
     </div>
+
 </body>
-</html> 
+</html>
